@@ -2,7 +2,7 @@ const languageData = {
     en: { name: "English", flagClass: "fi-gb" },
     es: { name: "Español", flagClass: "fi-es" },
     fr: { name: "Français", flagClass: "fi-fr"},
-    de: { name: "im gange", flagClass: "fi-de" }
+    de: { name: "Deutsch", flagClass: "fi-de" }
 };
 
 const translations = {
@@ -40,10 +40,10 @@ const translations = {
         curiousDesc3: "• It's recommend that you <b>build walls</b> around them as they will roll away after being hit.",
         curiousDesc4: "• Having the <a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/tech71'>Optical Drill</a> installed increases the yield.",
         curiousDesc5: "• <em><b>This is usually what people are looking for.</b></em>",
-        metalFingers: "Metal Fingers:",
+        metalFingers: "Metal 'Fingers':",
         metalDesc1: "• Will drop large amounts of either <b>Uranium</b> or <b>Gold.</b>",
         metalDesc2: "• Requires the <a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/tech70'>advanced mining laser</a> multitool tech installed.",
-        venomSac: "Venom Sac:",
+        venomSac: "Sac Venom:",
         venomDesc1: "• Drops <a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/cur24'>Sac Venom.</a>",
         venomDesc2: "• Getting too close will damage you and picking them up will <b>alert sentinels to level 3</b> (quad spawns).",
         venomDesc3: "• Also obtainable via the <a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/prod173'>Venom Urchin</a> plant.",
@@ -142,7 +142,53 @@ const translations = {
         venomDesc4: "• Les sacs de venin se vendent pour 60 800 unités",
 
         leylinesExplain: "Les lignes telluriques sont des lignes de longitude (lignes verticales allant du nord au sud) qui génèrent des dépôts de 3 étoiles. <br><br>Si vous trouvez une ligne tellurique, que ce soit par vous-même ou à l'aide de cet outil, il vous suffit de vous diriger vers le nord ou le sud pour trouver des dépôts.<br><br>Les lignes telluriques trouvées à l'aide de ce calculateur sont valables entre 45°N et 45°S. Cela ne signifie pas qu'il n'y aura pas de dépôts. Cela veut simplement dire que les lignes telluriques ne sont pas tout à fait certaines en dehors de cette région."
-    }
+    },
+
+    de: {
+        title: "NMS Ley-Linien Rechner",
+        calculator: "Rechner",
+        info: "Info",
+        firstCoords: "Erste Coordinates:",
+        secondCoords: "Zweite Coordinates:",
+        distanceTravelled: "Gereiste Entfernung:",
+        latPlaceholder: "Breite",
+        longPlaceholder: "Länge",
+        distPlaceholder: "Entfernung (u)",
+        clearAll: "Alles löschen",
+        locate: "Lokalisieren",
+        tip: "Tipp: Drücke Enter, um zum nächsten Eingabefeld zu gelangen",
+        leylinesHeader: "Ley-Linien erscheinen hier",
+        leylinesResult: "Ley-Linien bei diesen Längengraden:",
+
+        infoTitle1: "Wie man den Rechner benutzt",
+        infoTitle2: "Was sind 3-Sterne Vorkommen?",
+        infoTitle3: "Was sind Vorkommens-Ley-Linien?",
+
+        infoStep1: "Lande auf einem beliebigen Planeten und finde einen Referenzpunkt. Dies kann dein Raumschiff, ein Speichersignal oder eine Navigationsmarkierung sein.",
+        infoStep2: "Gib deine aktuellen Koordinaten in die ersten beiden Eingabefelder mit den Bezeichnungen „Länge“ und „Breite“ ein. Denk daran, positive oder negative Dezimalzahlen zu verwenden.",
+        infoStep3: "Gehe oder fahre <b>mindestens 1000u</b> von deinem Referenzpunkt entfernt und schreibe deine neue Position in den zweiten Satz von Eingabefeldern.",
+        infoStep4: "Verwende das Analysevisier, um die Entfernung zwischen deiner aktuellen Position und dem Referenzpunkt zu ermitteln. Trage diese in das Feld Entfernung ein.",
+        infoNote: "ANMERKUNG: Die angezeigte Entfernung, wenn du auf deine Markierung zeigst, wechselt zwischen 1100u und 1200u von <b>Units</b> zu <b>Minuten</b>.",
+        infoVideo: "Es gibt auch eine <a class='info-link' target='_blank' href='https://www.youtube.com/watch?v=Ec8QN39GNB8'>Videoanleitung</a>, falls du detailliertere Anweisungen benötigst :)",
+
+        deposits3StarIntro: "3-Sterne Vorkommen sind eine Art Ressource, die auf jedem Planeten gefunden werden können. <br>Hier sind die unterschiedlichen Arten von Vorkommen:",
+        curiousDeposit: "Merkwürdiges Vorkommen:",
+        curiousDesc1: "• Diese lassen große Mengen an <a class='info-link' target='_blank' href='https://app.nmsassistant.com/link/de/raw52.html?lang=de'>unkontrollierbarem Schimmel</a> fallen, der <b>im Verhältnis 5:1 zu Naniten raffiniert wird.</b>",
+        curiousDesc2: "• Erfordert die Installation der Technologie <a class='info-link' target='_blank' href='https://app.nmsassistant.com/link/de/tech70.html?lang=de'>Fortgeschrittener Minenlaser</a>.",
+        curiousDesc3: "• Es wird empfohlen, <b>Wände um dich herum zu bauen</b>, da sie nach einem Treffer wegrollen.",
+        curiousDesc4: "• Durch die Installation des <a class='info-link' target='_blank' href='https://app.nmsassistant.com/link/de/tech71.html?lang=de'>optischen Bohrers</a> lässt sich der Ertrag steigern.",
+        curiousDesc5: "• <em><b>Das ist in der Regel das, worauf die Leute hinauswollen.</b></em>",
+        metalFingers: "Metall-„Finger“:",
+        metalDesc1: "• Lässt große Mengen an entweder <b>Uran</b> oder <b>Gold</b> fallen.",
+        metalDesc2: "• Erfordert die Installation der Technologie <a class='info-link' target='_blank' href='https://app.nmsassistant.com/link/de/tech70.html?lang=de'>Fortgeschrittener Minenlaser</a>.",
+        venomSac: "Beutelgift:",
+        venomDesc1: "• <a class='info-link' target='_blank' href='https://app.nmsassistant.com/link/de/cur24.html?lang=de'>Beutelgift</a> kann eingesammelt werden.",
+        venomDesc2: "• Wenn du zu nahe kommst, wirst du Schaden nehmen, und wenn du sie aufhebst, werden <b>die Wächter auf Stufe 3 alarmiert</b> (vierbeinige Wächter Spawnen).",
+        venomDesc3: "• Auch über die Pflanze <a class='info-link' target='_blank' href='https://app.nmsassistant.com/link/de/prod173.html?lang=de'>Giftigel</a> erhältlich.",
+        venomDesc4: "• Beutelgift kann für 60.800 Units verkauft werden.",
+
+        leylinesExplain: "Ley-Linien sind Längengrade (vertikale Linien, die von Norden nach Süden verlaufen), an denen sich 3-Sterne-Vorkommen bilden. <br><br>Wenn du eine Ley-Linie findst - entweder selbst oder mithilfe dieses Tools - musst du nur gerade nach Norden oder Süden gehen, um Vorkommen zu finden. <br><br>Mit diesem Rechner gefundene Ley-Linien sind zwischen 45° N und 45° S gültig. Das bedeutet nicht, dass es außerhalb dieses Bereichs keine Vorkommen gibt. Es bedeutet lediglich, dass Ley-Linien außerhalb dieses Bereichs nicht vollständig sicher sind."
+    },
 };
 
 let currentLang = 'en';
