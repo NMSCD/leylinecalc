@@ -1,8 +1,9 @@
 const languageData = {
     en: { name: "English", flagClass: "fi-gb" },
     es: { name: "Español", flagClass: "fi-es" },
-    fr: { name: "Français", flagClass: "fi-fr"},
-    de: { name: "Deutsch", flagClass: "fi-de" }
+    fr: { name: "Français", flagClass: "fi-fr" },
+    de: { name: "Deutsch", flagClass: "fi-de" },
+    jp: { name: "Japanese", flagClass: "fi-jp" }
 };
 
 const translations = {
@@ -188,6 +189,52 @@ const translations = {
         venomDesc4: "• Beutelgift kann für 60.800 Units verkauft werden.",
 
         leylinesExplain: "Ley-Linien sind Längengrade (vertikale Linien, die von Norden nach Süden verlaufen), an denen sich 3-Sterne-Vorkommen bilden. <br><br>Wenn du eine Ley-Linie findst - entweder selbst oder mithilfe dieses Tools - musst du nur gerade nach Norden oder Süden gehen, um Vorkommen zu finden. <br><br>Mit diesem Rechner gefundene Ley-Linien sind zwischen 45° N und 45° S gültig. Das bedeutet nicht, dass es außerhalb dieses Bereichs keine Vorkommen gibt. Es bedeutet lediglich, dass Ley-Linien außerhalb dieses Bereichs nicht vollständig sicher sind."
+    },
+
+    jp: {
+        title: "NMSレイライン計算機",
+        calculator: "計算機",
+        info: "情報",
+        firstCoords: "1番目の座標:",
+        secondCoords: "2番目の座標:",
+        distanceTravelled: "移動距離:",
+        latPlaceholder: "緯度",
+        longPlaceholder: "経度",
+        distPlaceholder: "距離 (u)",
+        clearAll: "すべて消去",
+        locate: "見つける",
+        tip: "ヒント: 次の入力フィールドに移動するには、「Enter」を押します",
+        leylinesHeader: "ここにレイラインが現れる",
+        leylinesResult: "レイラインは次の経度にあります:",
+
+        infoTitle1: "計算機の使い方",
+        infoTitle2: "3スターデポジットとは何ですか?",
+        infoTitle3: "堆積レイラインとは何ですか?",
+
+        infoStep1: "どの惑星に着陸しても、基準点を確保できます。スターシップ、セーブビーコン、航法マーカーなど、様々なものが利用可能です。",
+        infoStep2: "最初の入力フィールド「緯度」と「経度」に現在の座標を記録します。正または負の小数を使用することを忘れないでください。",
+        infoStep3: "基準点から <b>少なくとも 1000u</b> 離れた場所まで歩くか車で移動し、2 番目のセットに新しい位置を記録します。",
+        infoStep4: "バイザーを使って、現在位置と基準点間の距離を測定します。「距離」欄に記録してください。",
+        infoNote: "注意: マーカーをポイントしたときに表示される距離は、1100u と 1200u の間のどこかで <b>単位</b> から <b>分</b> に切り替わります。",
+        infoVideo: "さらに詳しい説明が必要な場合は、<a class='info-link' target='_blank' href='https://www.youtube.com/watch?v=Ec8QN39GNB8'>ビデオガイド</a>もあります^^",
+
+        deposits3StarIntro: "3スター鉱床は、あらゆる惑星に存在する資源の一種です。<br>鉱床の種類は次のとおりです:",
+        curiousDeposit: "好奇心の預金:",
+        curiousDesc1: "• これらは大量の<a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/raw52'>逃げ出したカビ</a>をドロップし、<b>5:1 でナノマシンに精錬します</b>",
+        curiousDesc2: "• これには、<a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/tech70'>高度な採掘レーザー</a>技術をインストールする必要があります。",
+        curiousDesc3: "• 型の周囲に<b>壁を作る</b>ことをお勧めします。型の周囲は、叩かれた後に転がってしまうからです。",
+        curiousDesc4: "• <a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/tech71'>光学ドリル</a>を設置すると獲得できる資源量が増加します。",
+        curiousDesc5: "• <em><b>これは人々から非常に求められています。</b></em>",
+        metalFingers: "金属の「指」：",
+        metalDesc1: "• 大量の<b>ウラン</b>または<b>金</b>がドロップされます。",
+        metalDesc2: "• これには、<a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/tech70'>高度な採掘レーザー</a>技術をインストールする必要があります。",
+        venomSac: "サックヴェノム:",
+        venomDesc1: "• <a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/cur24'>サックヴェノム</a>をドロップします。",
+        venomDesc2: "• これに近づきすぎると怪我をします。また、これを拾うと、<b>レベル 3 のセンチネルに警告</b> されます (クワッド ウィルが出現します)。",
+        venomDesc3: "• <a class='info-link' target='_blank' href='https://app.nmsassistant.com/catalogue-item/prod173'>毒ウニ</a>植物からも入手できます。",
+        venomDesc4: "• サックベノムを60,800ユニット販売できます。",
+
+        leylinesExplain: "レイラインとは、経線（北から南へ伸びる垂直線）を指し、3つ星の資源鉱床が出現します。<br><br>レイラインを発見した場合（自分で発見した場合も、このツールを使用した場合も）、資源鉱床を見つけるには、まっすぐ北または南へ移動する必要があります。<br><br>この計算機で発見されたレイラインは、北緯45度から南緯45度までの範囲で有効です。これは、資源鉱床が存在しないという意味ではありませんが、その範囲外ではレイラインが完全に確認されていないことを意味します。"
     },
 };
 
