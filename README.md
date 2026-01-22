@@ -12,4 +12,5 @@ The CSS was terrible and the whole thing looked kind of bad so now it's better :
 
 <h3>A few things to note:</h3>
 - Button animations don't work super well on mobile. I might get it figured out sometime but idk.<br />
+- Arc Search (specifically) doesn't like my header so I might try to fix it at some point. It works fine on Chrome tho<br />
 - I wanted to add a neat background image on top of a solid color but apparently safari hates that so it's not staying ._.
