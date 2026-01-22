@@ -20,6 +20,8 @@
 
 * {
   font-family: "Ubuntu";
+  /* debug */
+  /* background: rgba(255, 10, 10, 0.05); */
 }
 
 @font-face {
@@ -109,21 +111,46 @@ html {
   background: var(--bg);
   overflow-x: hidden !important;
 }
+html, body {
+  padding: 0;
+  margin: 0;
+}
 .content {
   align-items: flex-start; /* use this instead of "top" */
   gap: 60px;
 }
-h1 {
-  background: var(--bg);
-  position: sticky;
-  top: 0;
+
+/* all the header stuff */
+header {
   width: 100vw;
+  margin: 0;
+  box-shadow: 0px 0px 8px var(--accent);
+}
+.header-section {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.header-section-left {
+  flex: 1;
+  justify-content: start;
+  text-wrap-mode: nowrap;
+}
+.header-section-left a {
+  color: var(--accent) !important;
+}
+.header-section-center {
+  flex: 6;
+  justify-content: center;
   text-align: center;
-  padding: 20px;
-  box-shadow: 0 0 40px 40px var(--bg);
-  z-index: 999;
+}
+.header-section-right {
+  flex: 1;
+  justify-content: end;
 }
 
+/* this would blur the bg behind containers IF there's a background image, which i removed */
 /* .calc-container, .info-head, .info-body {
     background: rgba(17, 14, 14, 30%);
     backdrop-filter: blur(12px);
@@ -316,25 +343,6 @@ h1 {
   color: var(--primary);
 }
 
-@media (max-width: 900px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .calc-container {
-    box-shadow: none;
-  }
-  .info-container {
-    width: 90vw;
-  }
-}
-
-.lang-selector {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
 
 .lang-dropdown {
     position: relative;
@@ -422,14 +430,35 @@ h1 {
 }
 
 @media (max-width: 900px) {
-    .lang-selector {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin: 10px 0 20px 0;
-    }
-    
-    .lang-dropdown {
-        margin: 0 auto;
-    }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calc-container {
+    box-shadow: none;
+  }
+  .info-container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    margin-bottom: 2rem;
+  }
+  .header-section-left, .header-section-right {
+    position: absolute;
+    height: 2rem;
+    align-items: center;
+    top: 1.5rem;
+  }
+  .header-section-left {
+    left: 0.5rem;
+  }
+  .header-section-right {
+    right: 0.5rem;
+  }
+  .header-section-center {
+    padding-top: 4rem;
+  }
 }
